@@ -2,7 +2,6 @@
 Numeric Chord Notation
 """
 
-def util_StringBuilder(chordChartRowList):
 
 
 #   StringToChordChart:: String -> Bool -> String
@@ -67,7 +66,7 @@ def rowBuilder(tuple):
     chordNotation = tuple[1]
     return chordName + ": " + chordNotation + '\n' # add support for unix-systems later.
 
-def stringBuilder(chordStream):
+def stringBuilder(chordStreamTuples):
     string = ''
     string.join([for (chordName, chordNotation) in chordStream, rowBuilder(chordName, chordNotation)]) # -> [[row], ..., [row]]
 
@@ -75,3 +74,7 @@ def numericNocationBuilder(userInput):
     chordStream = inputDissector(userInput) # Create list of chord names by seperating string into items via " " or "," or ", " delimeter.
     chordStream = chordStreamFeeder(chordStream, chordNotationPairer()) # Callback function mapping every entry of the chordStream list to the callback function.
     chordStream = stringBuilder(chordStream) # chordStream -> [(chordName, chordNotation)] -> String with carriage returns.
+    return chordStream
+
+userInput = "GM7 F#7b13 Em9 A13 DM9 C#7#9 Bm9 B9"
+print(numericNotationBuilder(userInput))
