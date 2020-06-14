@@ -68,6 +68,22 @@ This is not exhaustive. Chords such as m<sup>7(b5#11)</sup> are note listed expl
 |1 4 (5) ♭7 (9) 11|eleventh (special voicing)|11|Mixolydian|
 |1 4 (5) ♭9|suspended 4th ♭9|♭9sus, phryg|Phrygian or phrygian ♯6|
 
+# Polychords
+
+|Notes|Polychord notation|Voicing for|
+|--- |--- |--- |
+|2 ♯4 6 | 1 3 7|D/Cmaj7|Cmaj13(♯11)|
+|2 ♯4 6 | 1 3 ♭7|D/C7|C13(♯11)|
+|6 b2 3 | 1 3 ♭7|A/C7|C13(♭9)|
+|♯4 7 b2 | 1 3 ♭7|F♯7/C(bass)|C7♭9♭5|
+|♭6 1 ♭3 | 1 3 ♭7|Ab/C7|C7alt = C7(#5,#9)|
+|♭7 2 4 | 1 3 ♭5|Bb/Cdim|Cø11|
+|5 ♭7 2 | 1 b 5|Gm/C|C9|
+|5 7 2 | 1 b 5|G/C|Cmaj9|
+|5 ♭7 2 | 1 b 5|Gm/Cm|Cm9|
+|5 7 2 | 1 ♭3 5|G/Cm|Cm,maj9|
+
+
 # Other
 
 |Notes|Full Name|Abbreviations|Scale/Mode|
