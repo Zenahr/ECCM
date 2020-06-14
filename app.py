@@ -62,10 +62,14 @@ def normaliseChordName(chordName):
     chordName = chordName.replace(')', '')
     return chordName
 
+def rowBuilder(tuple):
+    chordName = tuple[0]
+    chordNotation = tuple[1]
+    return chordName + ": " + chordNotation + '\n' # add support for unix-systems later.
 
 def stringBuilder(chordStream):
     string = ''
-    string.join([for (chordName, notation) in chordStream, rowBuilder(chordName, notation)]) # -> [[row], ..., [row]]
+    string.join([for (chordName, chordNotation) in chordStream, rowBuilder(chordName, chordNotation)]) # -> [[row], ..., [row]]
 
 def numericNocationBuilder(userInput):
     chordStream = inputDissector(userInput) # Create list of chord names by seperating string into items via " " or "," or ", " delimeter.
