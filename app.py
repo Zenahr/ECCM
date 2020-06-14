@@ -57,3 +57,7 @@ def notationFinder(chordName):
     elif (chordName == 'Bm9'):
         return 'x57675'
 
+def normaliseChordName(chordName):
+    chordName = chordName.replace('(', '')
+    chordName = chordName.replace(')', '')
+    return chordName
