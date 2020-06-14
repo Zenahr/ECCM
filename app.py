@@ -33,4 +33,27 @@ def notationFinder(chordName):
             O -> x3x133x
     """
 
-    if (chordName == "")
+    if (chordName == 'Gmaj7'):
+        return '355433'
+
+    elif (chordName == 'Dmaj7'):
+        return 'x57675'
+
+    elif (chordName == 'F#7b13'):
+        return 'x57675'
+
+    elif (chordName == 'C#7#9' or chordName == 'C#7(#9)'):
+        return 'x57675'
+
+    elif (chordName == 'A13'):
+        return 'x57675'
+
+    elif (chordName == 'B79'):
+        return 'x57675'
+
+    elif (chordName == 'Em9'):
+        return 'x57675'
+
+    elif (chordName == 'Bm9'):
+        return 'x57675'
+
