@@ -1,17 +1,17 @@
-
 def chordBuilder(chord_stream):
     """
     Splits input into seperate chords and returns numeric chord diagram for each chord. Returns string
     """
     result = ""
-    split_stream = chord_stream.spilt()
+    split_stream = chord_stream.split()
     result = chordBuilderHelper(split_stream)
+    return result
 
 def chordBuilderHelper(split_stream):
     result = ""
     for chord in split_stream:
-        chord = lookUpChord(chord)
-    return split_stream
+        result += lookUpChord(chord) + "\n\n"
+    return result
 
 def lookUpChord(chordName, delimeter="::"):
     lookUpTable = {
@@ -24,6 +24,7 @@ def lookUpChord(chordName, delimeter="::"):
     else:
         return "N/A"
 
-
+chordStream = "Am7 D9 Gmaj7"
 chord = "Am7"
-print(lookUpChord(chord))
+# print(lookUpChord(chord))
+print(chordBuilder(chordStream))
