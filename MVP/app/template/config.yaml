@@ -13,5 +13,3 @@ socials:
 styling:
         mainCssPath: ../src/css/main.css
         extendedCssPath: ../src/css/extended.css
-
-js: 
